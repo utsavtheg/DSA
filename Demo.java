@@ -1,5 +1,8 @@
 import java.util.Scanner;
 public class Demo {
+
+
+
   public static void main(String args[]) {
     //hii i am single line comment
     /*I am multi line comment 
@@ -188,17 +191,119 @@ public class Demo {
 // System.out.print(x);
 // System.out.print(y);
 
-System.out.print("Enter the year: ");
-int year = sc.nextInt();
-if(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)){
-  System.out.println("Your year is a leap year!");
-}else{
-  System.out.println("your year is not a leap year!");
-}
+// System.out.print("Enter the year: ");
+// int year = sc.nextInt();
+// if(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)){
+//   System.out.println("Your year is a leap year!");
+// }else{
+//   System.out.println("your year is not a leap year!");
+// }
+
+
+
+// System.out.print("Enter your number of stars:");
+// int stars = sc.nextInt();
+// for(int i = 1;i <= stars;i++){
+//   for(int j = 1;j <= stars-1;j++){
+//      System.out.print("*");
+//   }
+//     System.out.println();
+// }
+
+
+
+// System.out.print("Enter the number:");
+// int num = sc.nextInt();
+// while(num > 0){
+//   int lastDigit = num % 10;
+//   System.out.print(lastDigit+" ");
+//   num = num / 10;
+// }
+// System.out.println();
+
+
+// System.out.print("Enter your number:");
+// int num = sc.nextInt();
+// int rev  = 0;
+// while(num > 0){
+//   int lastDigit = num % 10;
+//   rev = rev * 10 + lastDigit;
+//   num = num/10;
+  
+// }
+//  System.out.println(rev);
+
+// System.out.print("Enter your number:");
+// int num = sc.nextInt();
+// if(num == 2){
+//   System.out.println("num is Prime");
+// }else{
+// boolean isPrime = true;
+// for(int i = 1;i <= num-1;i++){
+//   if(num % i == 0){
+//     isPrime = false;
+//   }
+// }
+// if(isPrime = true){
+//   System.out.println(num + " is Prime");
+// }else{
+//   System.out.println(num + " is not Prime");
+// }
+// }
+
+
+
+// System.out.print("Enter your number: ");
+// int num = sc.nextInt();
+// for(int i = 1;i <= num;i++){
+//   for(int j = 0;j < i-1;j++){
+//     System.out.print("*");
+//   }
+//   System.out.println("*");
+// }
+
+
+// System.out.print("Enter your number: ");
+// int num = sc.nextInt();
+// for(int i = 1;i <= num;i++){
+//   for(int j = num;j >i;j--){
+//     System.out.print("*");
+//   }
+//   System.out.println("*");
+// }
+// System.out.print("Enter your number: ");
+// int num = sc.nextInt();
+// for(int i = 1;i <= num;i++){
+//   for(int j = num;j >= i;j--){
+//     System.out.print("*");
+//   }
+//   System.out.println();
+// }
+
+
+// System.out.print("Enter your number: ");
+// int num = sc.nextInt();
+// for(int i = 1;i <= num;i++){
+//   for(int j = 1;j <= i;j++){
+//     System.out.print(j);
+//   }
+//   System.out.println();
+
+
+// System.out.print("Enter your number: ");
+//  float num = sc.nextFloat();
+// char ch = 'A';
+// for(int i = 1;i <= num;i++){
+//   for(int j = 1;j <= i;j++){
+//     System.out.print(ch);
+//     ch++;
+//   }
+//   System.out.println();
+
+// }
+
+
 
   }
-
+  }
  
-
- 
-}
