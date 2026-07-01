@@ -120,17 +120,20 @@ public class function {
   //   return false;
   // }
 // public static boolean isPalindrome(int num){
-//   int i = 1;
+//   int original = num;
+//   int rev = 0;
 //    while(num > 0){
 //     int lastDigit = num % 10;
-//     if(lastDigit == i){
-//       i++;
-//       num = num / 10;
-//       return true;
-//     }
+//     num = num / 10;
+//    rev = rev * 10 + lastDigit;
 //    }
-//    return false;
-//   }
+//      if(original == rev){
+//       return true;
+//      }
+//     return false;
+//    }
+   
+  
   // public static void sumInteger(int num){
   //   int sum = 0;
   //   while(num > 0){
@@ -140,6 +143,98 @@ public class function {
   //   }
   //   System.out.println("Sum of digits: " + sum);
   // }
+  // public static boolean primeNumber(int num){
+  //   for(int i = 2;i<= Math.sqrt(num);i++){
+  //     if(num % i == 0){
+  //       return false;
+  //     }
+  //   }
+  //   return true;
+  // }
+  // public static void printPrimeRange(int num){
+  //   for(int i = 1;i<=num;i++){
+  //     if(primeNumber(i)){
+  //       System.out.print(i +",");
+  //     }
+  //   }
+  // }
+//   public  static void invertedHalfPyramid(int totRow,int totCol){
+//     for(int i = 1;i <= totRow;i++){
+//       for(int j = 1;j <= totCol;j++){
+//         if(i == totRow || j == totCol || i + j >= totRow + 1 ){
+//           System.out.print("*");
+//         }else{
+//           System.out.print(" ");
+//         }
+//       }
+//       System.out.println();
+
+//     }
+//   }
+// public static void printBoundaryStars(int totRow, int totCol){
+//   for(int i = 1;i<= totRow;i++){
+//     for(int j = 1;j<= totCol;j++){
+//       if(i == 1 ||i == totRow  || j == 1 || j == totCol){
+//         System.out.print("*");
+//       }else{
+//        System.out.print(" ");
+//       }
+      
+//     }
+//     System.out.println();
+//   }
+// }
+// public static void invHalf(int num){
+//   for(int i =1;i <= num;i++){
+//     for(int j = 1;j <= num;j++){
+//     if(i == 1|| j == 1 || i + j <= num +1){
+//       System.out.print( j+" ");
+//     }else{
+//       System.out.print(" ");
+//     }
+    
+//     }
+//     System.out.println();
+//   }
+// }
+
+// public static void  floyd(int num){
+//   int counter = 1;
+//   for(int i = 1;i <= num;i++){
+//     for(int j = 1;j <= i;j++){
+//       System.out.print(counter+" ");
+//       counter++;
+//     }
+//     System.out.println();
+//   }
+// }
+// public static void oneZero(int num){
+//   int one = 1;
+//   int zero = 0;
+//   for(int i =1;i <= num;i++){
+//     for(int j =1;j <= i;j++){
+//       if(i == j || (i+j) % 2 == 0){
+//         System.out.print(one+ " ");
+//       }else{
+//         System.out.print(zero+ " ");
+//       }
+//     }
+//     System.out.println();
+//   }
+  
+// }
+// public static void rohmbus(int num){
+//    for(int i = 1;i<= num;i++){
+//     for(int j = 1;j<= (2*num)-1;j++){
+//       if(i + j >= num+1 && i+j < 2*num+1){
+//         System.err.print("*");
+//       }else{
+//         System.out.print(" ");
+//       }
+//     }
+//     System.out.println();
+//    }
+//   }
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     // System.out.print("Enter you first number:");
@@ -182,10 +277,18 @@ public class function {
     // System.out.println("avg of your numbers is: "+avg);
     //  boolean eve = Even(13);
     // System.out.println(eve);
-    // boolean pal = isPalindrome(23);
+    // boolean pal = isPalindrome(1123);
     // System.out.println(pal);
     // sumInteger(123410);
-    
-    
+    // boolean isPrime = primeNumber(16);
+    // System.out.println("Is the number prime? " + isPrime);
+    // printPrimeRange(45);
+    // invertedHalfPyramid(5,5);
+    // printBoundaryStars(5, 5);
+    // invertedHalfPyramid(5,5);
+    // invHalf(5);
+    // floyd(5);
+    // oneZero(10);
+    // rohmbus(5);
 }
 }
